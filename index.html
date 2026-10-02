@@ -231,6 +231,12 @@ section.block + section.block{border-top:1px solid var(--line)}
 .plans{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem}
 .plan{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius-lg);padding:1.75rem;display:flex;flex-direction:column}
 .plan.hl{border:2px solid var(--green)}
+.plan-name{display:flex;align-items:center;gap:.7rem}
+.plan-ic{flex:none;width:2.5rem;height:2.5rem;border-radius:12px;background:var(--teal);color:var(--white);display:grid;place-items:center}
+.plan-ic svg{width:1.45rem;height:1.45rem}
+.plan .tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:.8rem}
+.plan .tags .tag{margin-bottom:0}
+.plan .tag.alt{background:var(--teal)}
 .plan .tag{align-self:flex-start;font-size:.75rem;font-weight:700;background:var(--green);color:var(--white);padding:.2rem .7rem;border-radius:999px;margin-bottom:.8rem}
 .plan h4{margin:0;font-size:1.35rem;color:var(--brand);letter-spacing:-.02em}
 .price{margin:.6rem 0 .2rem;font-variant-numeric:tabular-nums}
@@ -550,9 +556,12 @@ footer p{margin:0}
         <p>Valor único, não recorrente. Cobre a integração com o TagPlus, os painéis com seus dados e a entrega com treinamento.</p>
         <div class="plans">
           <article class="plan">
-            <h4>Start</h4>
+            <span class="tag">Condição de lançamento</span>
+            <h4 class="plan-name"><span class="plan-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v8"/><path d="M6.8 6.5a8 8 0 1 0 10.4 0"/></svg></span>Start</h4>
+            <p class="anchor">Valor normal: <s>R$ 1.559,90</s></p>
             <p class="price"><strong>R$ 1.199,90</strong><span>valor único</span></p>
             <p class="price-note">Parcelado em 3x sem juros</p>
+            <p class="save">Economia de R$ 360</p>
             <p class="desc">Para quem quer começar rápido com os painéis padrão do Sooler, aplicados aos dados da empresa.</p>
             <ul class="checks">
               <li>Painéis padrão do Sooler no Power BI: Gestão Financeira, com Orçamento e P&amp;L/DRE</li>
@@ -565,10 +574,12 @@ footer p{margin:0}
             </ul>
           </article>
           <article class="plan hl">
-            <span class="tag">Mais personalização</span>
-            <h4>Plus</h4>
+            <div class="tags"><span class="tag">Condição de lançamento</span><span class="tag alt">Mais personalização</span></div>
+            <h4 class="plan-name"><span class="plan-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="3"/></svg></span>Plus</h4>
+            <p class="anchor">Valor normal: <s>R$ 2.599,90</s></p>
             <p class="price"><strong>R$ 1.999,90</strong><span>valor único</span></p>
             <p class="price-note">Parcelado em 3x sem juros</p>
+            <p class="save">Economia de R$ 600</p>
             <p class="desc">Para quem quer os painéis mais próximos da própria operação, com indicadores, filtros e visual adaptados.</p>
             <ul class="checks">
               <li>Tudo do Start</li>
@@ -586,8 +597,8 @@ footer p{margin:0}
         <div class="plans">
           <article class="plan">
             <span class="tag">Condição de lançamento</span>
-            <h4>Care</h4>
-            <p class="anchor">Valor de lista: <s>R$ 199,90/mês</s></p>
+            <h4 class="plan-name"><span class="plan-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11A8 8 0 0 0 5.1 7.5"/><path d="M4.5 3.5v4.3h4.3"/><path d="M4 13a8 8 0 0 0 14.9 3.5"/><path d="M19.5 20.5v-4.3h-4.3"/></svg></span>Care</h4>
+            <p class="anchor">Valor normal: <s>R$ 199,90/mês</s></p>
             <p class="price"><strong>R$ 99,90</strong><span>por mês, 1º módulo</span></p>
             <p class="price-note"><strong>+ R$ 49,90</strong> por mês, por módulo adicional<br>Com fidelidade de 1 ano: 10% de desconto</p>
             <p class="save">Economia de R$ 100 por mês no 1º módulo</p>
@@ -601,8 +612,8 @@ footer p{margin:0}
           </article>
           <article class="plan hl">
             <span class="tag">Condição de lançamento</span>
-            <h4>Grow</h4>
-            <p class="anchor">Valor de lista: <s>R$ 259,90/mês</s></p>
+            <h4 class="plan-name"><span class="plan-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 13.5a7.5 7.5 0 0 1 6 6 6 6 0 0 0 3-5 9 9 0 0 0 6-8.5 2.5 2.5 0 0 0-2.5-2.5 9 9 0 0 0-8.5 6 6 6 0 0 0-4 4z"/><path d="M7.5 15a5 5 0 0 0-3 5 5 5 0 0 0 5-3"/><circle cx="15" cy="9" r="1.3"/></svg></span>Grow</h4>
+            <p class="anchor">Valor normal: <s>R$ 259,90/mês</s></p>
             <p class="price"><strong>R$ 129,90</strong><span>por mês, 1º módulo</span></p>
             <p class="price-note"><strong>+ R$ 69,90</strong> por mês, por módulo adicional<br>Com fidelidade de 1 ano: 10% de desconto</p>
             <p class="save">Economia de R$ 130 por mês no 1º módulo</p>
@@ -637,7 +648,7 @@ footer p{margin:0}
             </tr>
           </thead>
           <tbody>
-            <tr><th scope="row">Valor</th><td class="v">R$ 1.199,90<br><small>em 3x sem juros</small></td><td class="v">R$ 1.999,90<br><small>em 3x sem juros</small></td><td class="v"><s class="old">R$ 199,90</s><br>R$ 99,90<br><small>+ R$ 49,90 por módulo adicional</small></td><td class="v"><s class="old">R$ 259,90</s><br>R$ 129,90<br><small>+ R$ 69,90 por módulo adicional</small></td></tr>
+            <tr><th scope="row">Valor</th><td class="v">R$ 1.199,90<br><small>em 3x sem juros</small></td><td class="v">R$ 1.999,90<br><small>em 3x sem juros</small></td><td class="v">R$ 99,90<br><small>+ R$ 49,90 por módulo adicional</small></td><td class="v">R$ 129,90<br><small>+ R$ 69,90 por módulo adicional</small></td></tr>
             <tr class="sub"><th colspan="5" scope="colgroup">Implantação</th></tr>
             <tr><th scope="row">Painéis de Gestão Financeira (Orçamento e P&amp;L/DRE)</th><td><span class="yes" aria-hidden="true">✓</span><span class="sr">Incluso</span></td><td><span class="yes" aria-hidden="true">✓</span><span class="sr">Incluso</span></td><td>–</td><td>–</td></tr>
             <tr><th scope="row">Integração com o TagPlus</th><td><span class="yes" aria-hidden="true">✓</span><span class="sr">Incluso</span></td><td><span class="yes" aria-hidden="true">✓</span><span class="sr">Incluso</span></td><td>–</td><td>–</td></tr>
