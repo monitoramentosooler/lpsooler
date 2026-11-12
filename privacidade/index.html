@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Política de Privacidade | Sooler</title>
+<meta name="description" content="Como o Sooler, produto da Skylan Technology, trata dados pessoais: site, contato comercial e dados lidos do TagPlus, conforme a LGPD.">
+<link rel="canonical" href="https://sooler.com.br/privacidade/">
+<meta name="theme-color" content="#0F4E57">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --white:#FFFFFF; --green:#537732; --black:#000000; --teal:#0F4E57; --skylan:#283172;
+  --ink:var(--black); --paper:var(--white); --surface:#F4F6F5; --muted:#4F5757; --line:#DDE3E2;
+  --brand:var(--teal); --accent:var(--green); --accent-text:var(--green); --on-accent:var(--white);
+  --max:820px;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ink:var(--white); --paper:var(--black); --surface:#0A1F22; --muted:#B9C2C2; --line:#1E3538;
+    --brand:#7FB8BF; --accent-text:#8DB65F;
+  }
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:"Montserrat",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  font-size:1.0625rem;line-height:1.7;-webkit-font-smoothing:antialiased;
+}
+a{color:var(--accent-text)}
+:focus-visible{outline:3px solid var(--accent-text);outline-offset:3px;border-radius:4px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 1.5rem}
+.skip{position:absolute;left:-999px;top:0}
+.skip:focus{left:1rem;top:1rem;background:var(--surface);padding:.5rem 1rem;z-index:10}
+
+header.top{
+  position:sticky;top:0;z-index:5;
+  background:color-mix(in srgb,var(--paper) 88%,transparent);
+  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;height:68px;max-width:1120px}
+.brand{font-weight:800;font-size:1.5rem;letter-spacing:-.03em;color:var(--brand);text-decoration:none}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;white-space:nowrap;
+  font:inherit;font-weight:700;font-size:.9rem;text-decoration:none;
+  padding:.55rem 1.1rem;border-radius:999px;border:2px solid transparent;
+  background:var(--accent);color:var(--on-accent);
+}
+
+main{padding:3.5rem 0 4.5rem}
+h1{font-size:clamp(2rem,4.5vw,3rem);line-height:1.1;letter-spacing:-.03em;font-weight:800;color:var(--brand);margin:0 0 .5rem}
+.updated{color:var(--muted);font-size:.9rem;margin:0 0 2.5rem}
+.doc h2{font-size:1.4rem;line-height:1.25;letter-spacing:-.02em;font-weight:800;color:var(--brand);margin:2.5rem 0 .75rem}
+.doc h3{font-size:1.1rem;font-weight:700;margin:1.75rem 0 .5rem}
+.doc p{margin:0 0 1rem}
+.doc ul,.doc ol{margin:0 0 1rem;padding-left:1.4rem}
+.doc li{margin:.35rem 0}
+.table-wrap{overflow-x:auto;margin:0 0 1.5rem;border:1px solid var(--line);border-radius:12px}
+.doc table{width:100%;min-width:560px;border-collapse:collapse;font-size:.92rem}
+.doc th,.doc td{padding:.7rem .9rem;border-top:1px solid var(--line);text-align:left;vertical-align:top}
+.doc thead th{background:var(--surface);border-top:0;font-weight:700}
+.todo{border:2px dashed var(--accent);border-radius:12px;padding:1rem 1.25rem;background:var(--surface);color:var(--muted)}
+
+.maker{background:var(--skylan);color:#fff;padding:2.25rem 0}
+.maker .wrap{max-width:1120px}
+.maker small{display:block;font-size:.8rem;font-weight:600;opacity:.8;margin-bottom:.35rem}
+.maker p{margin:0;font-size:1.05rem;font-weight:700;line-height:1.4}
+.maker a{color:#fff}
+footer{border-top:1px solid var(--line);padding:2rem 0;font-size:.85rem;color:var(--muted)}
+footer .wrap{max-width:1120px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem}
+footer p{margin:0}
+</style>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Sooler, voltar ao início">Sooler</a>
+    <a class="btn" href="/">Voltar ao site</a>
+  </div>
+</header>
+
+<main id="conteudo">
+  <div class="wrap doc">
+    <h1>Política de Privacidade</h1>
+    <p class="updated">Última atualização: 12 de novembro de 2026</p>
+
+    <!-- ===== INÍCIO DO TEXTO DA POLÍTICA ===== -->
+    <h2>Quem somos</h2>
+    <p>O Sooler é uma ferramenta de Gestão criada pela <strong>Skylan Technology</strong> ("Skylan").</p>
+    <p>Um projeto de Business Intelligence com integração, modelagem e construção de painéis. O TagPlus segue como origem dos dados; o Sooler organiza essas informações e as apresenta em painéis prontos para análise.</p>
+    <p>Este aviso explica como tratamos dados pessoais em duas situações: (i) quando você visita este site ou fala com a gente, caso em que a Skylan é a <strong>controladora</strong> dos dados; e (ii) quando uma empresa contrata o Sooler, caso em que a Skylan trata dados <strong>em nome e conforme as instruções da empresa cliente</strong>, como <strong>operadora</strong>.</p>
+    <p>O tratamento segue a Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018, LGPD), o Marco Civil da Internet e as diretrizes internas da Política de Privacidade e Proteção de Dados Pessoais da Skylan.</p>
+
+    <h2>Dados coletados neste site</h2>
+    <p>Este site é institucional. Ele <strong>não</strong> exige cadastro e não possui área de login. Os dados pessoais chegam até nós apenas quando você decide entrar em contato, por exemplo:</p>
+    <ul>
+      <li>pelo WhatsApp, quando recebemos seu número de telefone, seu nome de perfil e o conteúdo da mensagem;</li>
+      <li>por e-mail ou telefone, quando recebemos seu nome, endereço de e-mail ou número e a mensagem enviada.</li>
+    </ul>
+    <p>Usamos essas informações apenas para responder à sua solicitação, apresentar o Sooler e dar andamento a propostas comerciais, e as mantemos pelo tempo necessário para isso.</p>
+    <p>Como acontece em qualquer site, o provedor de hospedagem pode registrar data, hora e endereço IP dos acessos. O Marco Civil da Internet (art. 15) exige a guarda desses registros de acesso à aplicação, e eles são usados apenas para segurança e cumprimento de obrigações legais.</p>
+
+    <h2>Serviços de terceiros e transferência internacional</h2>
+    <p>Alguns recursos do site dependem de empresas que atuam fora do Brasil. Ao usá-los, dados como endereço IP, informações do dispositivo e dados de navegação podem ser tratados por elas, conforme as políticas de privacidade de cada uma:</p>
+    <ul>
+      <li><strong>WhatsApp (Meta Platforms, Inc.):</strong> ao clicar no link de contato, você é levado ao WhatsApp, e a conversa passa a ser tratada também pela Meta.</li>
+      <li><strong>Google Fonts (Google LLC):</strong> o site carrega a fonte Montserrat dos servidores do Google, que recebem seu endereço IP para entregá-la.</li>
+      <li><strong>GitHub Pages (GitHub, Inc., do grupo Microsoft):</strong> plataforma em que o site é hospedado.</li>
+    </ul>
+    <p>Essas transferências internacionais ocorrem com base nos mecanismos previstos na LGPD, como cláusulas contratuais e padrões de proteção equivalentes aos exigidos pela lei brasileira. Recomendamos consultar também as políticas de privacidade dessas plataformas.</p>
+
+    <h2>Quando a Skylan é controladora</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Categoria do titular</th><th>Dados tratados</th><th>Finalidades</th><th>Bases legais</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Visitantes do site</td>
+            <td>Dados de acesso e navegação, nome, e-mail, telefone/celular e mensagem enviada.</td>
+            <td>Atender solicitações e retornar o contato.</td>
+            <td>LGPD, art. 7º, V: procedimentos preliminares a pedido do titular.<br>LGPD, art. 7º, IX: legítimo interesse do controlador.</td>
+          </tr>
+          <tr>
+            <td>Representantes e colaboradores de empresas clientes e interessadas</td>
+            <td>Nome, cargo, telefone e e-mail profissionais.</td>
+            <td>Contratar, implantar, dar suporte e cobrar o Sooler; comunicar-se sobre o serviço.</td>
+            <td>LGPD, art. 7º, V: execução de contrato.<br>LGPD, art. 7º, IX: legítimo interesse do controlador.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Quando a Skylan é operadora: dados do Sooler</h2>
+    <p>Para montar os painéis, o Sooler acessa o TagPlus da empresa cliente por meio da API, <strong>somente para leitura</strong>, depois que a própria empresa autoriza esse acesso. O Sooler não altera nem apaga nada no TagPlus.</p>
+    <p>Nesse cenário, a empresa cliente é a controladora dos dados e define as finalidades do tratamento. A Skylan os trata exclusivamente para entregar e manter o serviço contratado, seguindo as instruções da cliente e o contrato firmado entre as partes.</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Categoria do titular</th><th>Dados tratados</th><th>Finalidades</th><th>Bases legais</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Clientes, fornecedores e usuários da empresa contratante</td>
+            <td>Dados cadastrais e financeiros registrados no TagPlus, como nome ou razão social, documento, vendas, lançamentos a pagar e a receber e movimentações.</td>
+            <td>Consolidar os dados em painéis de Power BI e disponibilizá-los à empresa contratante.</td>
+            <td>Definidas pela empresa contratante, na condição de controladora. Para a Skylan, execução do contrato (LGPD, art. 7º, V).</td>
+          </tr>
+          <tr>
+            <td>Usuários dos painéis</td>
+            <td>Nome e e-mail corporativo usados no controle de acesso.</td>
+            <td>Liberar e controlar o acesso aos painéis do Sooler.</td>
+            <td>LGPD, art. 7º, V: execução de contrato.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Os painéis do Sooler ficam em ambiente Microsoft (Power BI e SharePoint), com acesso restrito às pessoas autorizadas pela empresa contratante. Se você é titular de dados tratados por uma empresa cliente, fale primeiro com ela. Nós a ajudamos a atender o seu pedido.</p>
+
+    <h2>Compartilhamento de dados</h2>
+    <p>Compartilhamos dados pessoais de forma limitada, somente quando necessário, com parceiros e fornecedores que ajudam a executar os serviços contratados (como a Microsoft, que fornece a infraestrutura do Power BI e do SharePoint, e o TagPlus, de onde os dados são lidos) ou para cumprir obrigações legais e regulatórias.</p>
+    <p>Exigimos desses terceiros padrões de segurança alinhados às diretrizes da <strong>ABNT NBR ISO/IEC 27001</strong> e o cumprimento da <strong>LGPD</strong>, e avaliamos continuamente suas práticas. Não vendemos dados pessoais.</p>
+
+    <h2>Segurança dos dados</h2>
+    <p>Adotamos medidas técnicas e administrativas alinhadas às normas <strong>ABNT NBR ISO/IEC 27001 e 27002</strong> para proteger os dados contra acessos não autorizados, vazamentos e perdas. Isso inclui controle de acesso por cliente, acesso à API do TagPlus somente para leitura e uso de ferramentas de fabricantes reconhecidos em tecnologia e segurança da informação.</p>
+    <p>Para nós, segurança cibernética é uma obrigação essencial para proteger os dados de clientes, parceiros e colaboradores.</p>
+
+    <h2>Cookies</h2>
+    <p>Este site utiliza apenas os recursos técnicos necessários para ser exibido, como o carregamento de fontes mencionado acima. Você pode gerenciar ou bloquear cookies e dados de sites nas configurações do seu navegador.</p>
+    <!-- Se o Google Analytics, o Google Tag Manager ou outra ferramenta de medição for adicionado ao site,
+         inclua aqui um parágrafo descrevendo a ferramenta, os dados coletados e como desativá-la. -->
+
+    <h2>Retenção de dados</h2>
+    <p>Mantemos dados pessoais apenas pelo tempo necessário para cumprir as finalidades descritas neste aviso ou o que a lei exigir. Os dados tratados como operadora são mantidos durante a vigência do contrato com a empresa cliente e, ao final, eliminados ou devolvidos conforme as instruções da controladora e o contrato, salvo quando a lei exigir a guarda.</p>
+
+    <h2>Direitos dos titulares</h2>
+    <p>Pela LGPD, você pode solicitar:</p>
+    <ul>
+      <li><strong>Confirmação do tratamento:</strong> saber se tratamos dados pessoais seus.</li>
+      <li><strong>Acesso:</strong> obter cópia dos dados que temos sobre você.</li>
+      <li><strong>Correção:</strong> corrigir dados incompletos, inexatos ou desatualizados.</li>
+      <li><strong>Anonimização, bloqueio ou eliminação:</strong> de dados desnecessários, excessivos ou tratados em desconformidade com a lei.</li>
+      <li><strong>Portabilidade:</strong> receber seus dados para transferi-los a outro fornecedor, observados os segredos comercial e industrial.</li>
+      <li><strong>Informação sobre compartilhamento:</strong> saber com quais entidades públicas e privadas compartilhamos seus dados.</li>
+      <li><strong>Revogação do consentimento:</strong> retirar o consentimento dado, quando esta for a base do tratamento.</li>
+    </ul>
+    <p>Atendemos às solicitações com transparência e dentro dos prazos previstos em lei.</p>
+
+    <h2>Canal do titular e encarregado (DPO)</h2>
+    <p>Para exercer seus direitos, tirar dúvidas ou relatar preocupações sobre privacidade, fale com o Encarregado de Proteção de Dados da Skylan:</p>
+    <ul>
+      <li><strong>E-mail:</strong> <a href="mailto:dpo@skylan.com.br">dpo@skylan.com.br</a></li>
+      <li><strong>Telefone:</strong> +55 11 3653-0069</li>
+      <li><strong>Encarregado:</strong> Sergio Estrela Martins</li>
+      <li><strong>Endereço:</strong> Rua Federação Paulista de Futebol, 799, conj. 1706, Barra Funda, São Paulo/SP, CEP 01141-040</li>
+    </ul>
+
+    <h2>Alterações neste aviso</h2>
+    <p>Podemos atualizar este aviso para refletir mudanças na legislação ou em nossas práticas. A data da última atualização aparece no topo desta página, e recomendamos consultá-la de tempos em tempos.</p>
+    <!-- ===== FIM DO TEXTO DA POLÍTICA ===== -->
+  </div>
+</main>
+
+<section class="maker" aria-label="Criador do Sooler">
+  <div class="wrap">
+    <small>Powered by Skylan</small>
+    <p>O Sooler é desenvolvido, implantado, comercializado e mantido pela <a href="https://www.skylan.com.br" target="_blank" rel="noopener">Skylan Technology</a>.</p>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <p>Sooler é um produto Skylan Technology, integrado ao TagPlus.</p>
+    <p><a href="/">Início</a> · <a href="/privacidade/">Política de Privacidade</a></p>
+  </div>
+</footer>
+</body>
+</html>
